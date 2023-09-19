@@ -41,6 +41,7 @@ class Ledger < Formula
     ENV.prepend_path "PATH", Formula["python@3.11"].opt_libexec/"bin"
 
     args = %W[
+      --python
       --jobs=#{ENV.make_jobs}
       --output=build
       --prefix=#{prefix}
